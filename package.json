@@ -1,0 +1,26 @@
+{
+  "name": "taste",
+  "version": "0.0.1",
+  "description": "Wrapper around testing libraries used by GetHuman",
+  "main": "lib/taste.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/gethuman/taste.git"
+  },
+  "keywords": [
+    "javascript",
+    "testing"
+  ],
+  "author": "Jeff Whelpley",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gethuman/taste/issues"
+  },
+  "homepage": "https://github.com/gethuman/taste",
+  "dependencies": {
+
+  },
+  "devDependencies": {
+
+  }
+}
