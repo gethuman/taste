@@ -1,6 +1,6 @@
 {
   "name": "taste",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Wrapper around testing libraries used by GetHuman",
   "main": "lib/taste.js",
   "repository": {
@@ -24,6 +24,7 @@
     "gulp-istanbul": "^0.3.1",
     "gulp-jshint": "^1.8.5",
     "gulp-mocha": "^1.1.1",
+    "gulp-util": "^3.0.1",
     "gulp-watch": "^1.1.0",
     "karma": "^0.12.24",
     "lodash": "^2.4.1",
