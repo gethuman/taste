@@ -10,7 +10,6 @@
     "latedef": true,
     "newcap": true,
     "noarg": true,
-    "quotmark": "single",
     "regexp": true,
     "undef": true,
     "unused": true,
@@ -20,12 +19,14 @@
     "white": true,
     "expr": true,
     "globals": {
+        "emit": true,
+        "window": true,
         "angular": true,
         "describe": true,
         "it": true,
+        "beforeEach": true,
         "before": true,
         "after": true,
-        "beforeEach": true,
         "afterEach": true,
         "inject": true
     }
