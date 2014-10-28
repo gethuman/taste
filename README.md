@@ -62,6 +62,7 @@ This will run over the allCode value (i.e. concat of all file paths or the custo
 * test & test.integration - Run server side unit and integration tests. The following command line parameters are available for these:
     * --cov=true - This will run test coverage using Istanbul over your code.
     * --files={file pattern} - Instead of doing all tests, you can focus in on one or everyone in a particular directory. For example --files=some/dir
+    * --reporter={mocha reporter} - Default is progress
 * test.karma - Run karma unit tests
 * test.protractor (to be added soon)
 * watch - Run server side watches which will re-run jshint and test tasks whenever any files have changed.
