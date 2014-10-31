@@ -18,6 +18,7 @@
     "smarttabs": true,
     "white": true,
     "expr": true,
+    "-W015": false,
     "globals": {
         "emit": true,
         "window": true,
