@@ -22,6 +22,7 @@
     "globals": {
         "emit": true,
         "window": true,
+        "history": true,
         "angular": true,
         "describe": true,
         "it": true,
