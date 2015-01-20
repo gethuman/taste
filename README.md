@@ -1,4 +1,4 @@
-Taste
+taste
 ==========
 
 Simple wrapper around testing libraries used by GetHuman. This library would be helpful to anyone
