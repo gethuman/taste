@@ -1,6 +1,6 @@
 {
   "name": "taste",
-  "version": "0.1.48",
+  "version": "0.1.49",
   "description": "Wrapper around testing libraries used by GetHuman",
   "main": "lib/taste.js",
   "repository": {
@@ -21,10 +21,10 @@
     "lodash": "^3.2.0",
     "q": "^1.1.2",
     "sinon": "^1.12.2",
-    "yargs": "^2.3.0",
-    "chai": "^1.10.0",
-    "chai-as-promised": "^4.1.1",
-    "sinon-chai": "^2.6.0"
+    "yargs": "^3.0.4",
+    "chai": "^2.0.0",
+    "chai-as-promised": "^4.2.0",
+    "sinon-chai": "^2.7.0"
   },
   "devDependencies": {
   }
