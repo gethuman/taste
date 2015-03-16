@@ -18,13 +18,13 @@
   },
   "homepage": "https://github.com/gethuman/taste",
   "dependencies": {
-    "chai": "^2.1.1",
+    "chai": "^2.1.2",
     "chai-as-promised": "^4.3.0",
-    "lodash": "^3.4.0",
+    "lodash": "^3.5.0",
     "q": "^1.2.0",
-    "sinon": "^1.13.0",
+    "sinon": "^1.14.0",
     "sinon-chai": "^2.7.0",
-    "yargs": "^3.4.5"
+    "yargs": "^3.5.4"
   },
   "devDependencies": {}
 }
