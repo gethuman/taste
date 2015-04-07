@@ -29,42 +29,29 @@ npm install taste --save-dev
 Then in the Gulpfile.js that should be in your project root (because you are using Gulp, right?), put this near the top:
 
 ```
-var gulp    = require('gulp');
-var taste   = require('taste');
+// in your gulp file or mocha init file (depending on how you run your tests)
+var taste = require('taste');
+taste.firstBite('../path/to/root/dir');
 
-taste.init({
-    gulp:       gulp,
-    rootDir:    __dirname + '/lib',
-    loadModule: require
-
-    // add other options as well here (see below)
+// in each test spec file
+var taste = require('taste');
+describe('something to test', function () {
+    it('should do something', function () {
+        taste.should.exist(blah);
+        var fn = taste.spy();
+        // etc.
+    });
 });
-```
 
-## Options
+## API
 
-* [unit|integration|karma|protractor]TargetCode - Each of these values (ex. karmaTargetCode) contains the gulp file pattern
-for all the files that will be tested by the corresponding type of test. So, for example, karmaTargetCode could point to
-'dist/js/*.js' which contains all the client side code that is being unit tested by Karma.
-* [unit|integration|karma|protractor]TestCode - The actual test code. So, for example, karmaTestCode would contain the Gulp
-file pattern for those test files which run the actual Karma tests.
-* allCode (default concat of all file patterns passed in) - This is used for jshint as well as watch.
-
-## Gulp
-
-Part of the idea behind this library is that you should be running all testing through Gulp. If you want to run
-Mocha or Karma outside of Gulp, you will need to add some additional configuration files into your project.
-
-The taste.init() called in your Gulpfile will automatically add the following tasks:
-
-* jshint - Run with a specific set of options that (sorry) you can't change. This is so you don't need a local .JSHINTRC file.
-This will run over the allCode value (i.e. concat of all file paths or the custom value you pass in).
-* test & test.integration - Run server side unit and integration tests. The following command line parameters are available for these:
-    * --cov=true - This will run test coverage using Istanbul over your code.
-    * --files={file pattern} - Instead of doing all tests, you can focus in on one or everyone in a particular directory. For example --files=some/dir
-    * --reporter={mocha reporter} - Default is progress
-* test.karma - Run karma unit tests
-* test.protractor (to be added soon)
-* watch - Run server side watches which will re-run jshint and test tasks whenever any files have changed.
-* watch.ng - Run karma watch to re-run karma unit tests when any client side code changes.
-
+The taste object has the following functions that you can use in your test spec:
+ 
+* spy - Exposed sinon.spy
+* expect - Exposed chai.expect
+* should - Exposed chai.should()
+* firstByte - To set the root dir for the app
+* all - Does a Q.all() and then calls the mocha done() function once everything has resolved
+* eventuallyEqual, eventuallyFulfilled, eventuallyRejected, eventuallyRejectedWith - Extra sugar on top of chai-as-promised
+* copy - Copy an object
+* target - Do require to get a module to be tested without using relative path (go from project root)
