@@ -24,7 +24,7 @@
     "q": "^1.2.0",
     "sinon": "^1.14.1",
     "sinon-chai": "^2.7.0",
-    "yargs": "^3.7.0"
+    "yargs": "^3.7.1"
   },
   "devDependencies": {}
 }
