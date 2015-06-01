@@ -1,6 +1,6 @@
 {
   "name": "taste",
-  "version": "0.1.65",
+  "version": "0.1.66",
   "description": "Wrapper around testing libraries used by GetHuman",
   "main": "lib/taste.js",
   "repository": {
