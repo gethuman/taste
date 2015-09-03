@@ -22,9 +22,9 @@
     "chai-as-promised": "^5.1.0",
     "lodash": "^3.10.1",
     "q": "^1.4.1",
-    "sinon": "^1.15.4",
+    "sinon": "^1.16.1",
     "sinon-chai": "^2.8.0",
-    "yargs": "^3.19.0"
+    "yargs": "^3.23.0"
   },
   "devDependencies": {}
 }
