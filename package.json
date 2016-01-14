@@ -20,7 +20,7 @@
   "dependencies": {
     "chai": "^3.4.1",
     "chai-as-promised": "^5.2.0",
-    "lodash": "^3.10.1",
+    "lodash": "^4.0.0",
     "q": "^1.4.1",
     "sinon": "^1.17.2",
     "sinon-chai": "^2.8.0",
