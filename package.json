@@ -20,11 +20,11 @@
   "dependencies": {
     "chai": "3.5.0",
     "chai-as-promised": "5.2.0",
-    "lodash": "4.5.0",
+    "lodash": "4.6.0",
     "q": "1.4.1",
     "sinon": "1.17.3",
     "sinon-chai": "2.8.0",
-    "yargs": "4.1.0"
+    "yargs": "4.2.0"
   },
   "devDependencies": {}
 }
