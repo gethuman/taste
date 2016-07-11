@@ -24,7 +24,7 @@
     "q": "1.4.1",
     "sinon": "1.17.4",
     "sinon-chai": "2.8.0",
-    "yargs": "4.7.1"
+    "yargs": "4.8.0"
   },
   "devDependencies": {}
 }
